@@ -1,6 +1,6 @@
 # 💼 Portafolio Personal
 
-Portafolio web profesional con diseño moderno y tonalidades moradas.
+Portafolio web profesional.
 
 ## 📁 Estructura de Carpetas
 
@@ -30,22 +30,6 @@ portfolio/
 │
 └── README.md              # Este archivo
 ```
-
-## 🎨 Características
-
-- ✅ Diseño responsivo con sistema de grid
-- ✅ Paleta de colores en tonalidades moradas
-- ✅ Secciones organizadas por cuadros
-- ✅ Información de contacto y redes sociales
-- ✅ Portafolio de proyectos
-- ✅ Formulario de contacto
-
-## 🚀 Tecnologías
-
-- HTML5
-- CSS3 (Grid Layout, Flexbox, Gradients)
-- Font Awesome Icons
-- JavaScript
 
 ## 📧 Contacto
 
