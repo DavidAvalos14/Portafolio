@@ -1,25 +1,55 @@
-Estructura de carpetas:
+# 💼 Portafolio Personal
+
+Portafolio web profesional con diseño moderno y tonalidades moradas.
+
+## 📁 Estructura de Carpetas
+
+```
 portfolio/
 │
-├── index.html
+├── index.html              # Página principal del portafolio
 │
-├── assets/
+├── assets/                 # Recursos del proyecto
 │   ├── css/
-│   │   └── style.css
+│   │   └── style.css      # Estilos principales con tonalidades moradas
 │   │
-│   ├── js/
+│   ├── js/                # Scripts JavaScript
 │   │   └── main.js
 │   │
-│   ├── img/
+│   ├── img/               # Imágenes y recursos visuales
 │   │   ├── profile.jpg
-│   │   ├── projects/
+│   │   ├── projects/      # Capturas de proyectos
 │   │   │   ├── tienda-php.png
 │   │   │   └── servidor-linux.png
-│   │   └── icons/
+│   │   └── icons/         # Iconos personalizados
 │   │
-│   └── docs/
+│   └── docs/              # Documentos
 │       └── CV-David-Avalos.pdf
 │
-├── favicon.ico
+├── .git/                  # Control de versiones
 │
-└── README.md
+└── README.md              # Este archivo
+```
+
+## 🎨 Características
+
+- ✅ Diseño responsivo con sistema de grid
+- ✅ Paleta de colores en tonalidades moradas
+- ✅ Secciones organizadas por cuadros
+- ✅ Información de contacto y redes sociales
+- ✅ Portafolio de proyectos
+- ✅ Formulario de contacto
+
+## 🚀 Tecnologías
+
+- HTML5
+- CSS3 (Grid Layout, Flexbox, Gradients)
+- Font Awesome Icons
+- JavaScript
+
+## 📧 Contacto
+
+**Angel David Avalos Carrillo**
+- Email: angeldavidavaloscarrillo@gmail.com
+- LinkedIn: [angel-david-avalos-carrillo](https://www.linkedin.com/in/angel-david-avalos-carrillo-831a96301/)
+- GitHub: [DavidAvalos14](https://github.com/DavidAvalos14)
