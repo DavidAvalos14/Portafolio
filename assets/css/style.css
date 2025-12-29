@@ -290,6 +290,30 @@ body {
     box-shadow: 0 6px 20px rgba(147, 51, 234, 0.4);
 }
 
+/* Sección de habilidades */
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.skill-category {
+    margin-bottom: 25px;
+}
+
+.skill-category h3 {
+    color: #c084fc;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-category h3 i {
+    color: #a855f7;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .parent {
