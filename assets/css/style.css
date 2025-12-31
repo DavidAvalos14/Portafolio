@@ -320,6 +320,11 @@ body::before {
     font-size: 0.9em;
 }
 
+.info-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .social-links {
     display: flex;
     gap: 15px;
