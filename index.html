@@ -10,13 +10,34 @@
     <!-- This is my portfolio, the idea is to separete every section in squares and use purples tones -->
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <span>AD</span>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="#inicio" class="navbar-link active">Inicio</a></li>
+                <li><a href="#sobre-mi" class="navbar-link">Sobre Mí</a></li>
+                <li><a href="#proyectos" class="navbar-link">Proyectos</a></li>
+                <li><a href="#educacion" class="navbar-link">Educación</a></li>
+                <li><a href="#habilidades" class="navbar-link">Habilidades</a></li>
+                <li><a href="#extras" class="navbar-link">Extras</a></li>
+            </ul>
+            <button class="navbar-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
     
 <div class="parent">
     <!-- Cuadro izquierdo: Información rápida -->
-    <div class="div1 card">
+    <div id="inicio" class="div1 card">
         <div class="profile-section">
             <div class="avatar">
-                <i class="fas fa-user"></i>
+                <img src="assets/img/FotoPerfil.jpeg" alt="Angel David Avalos Carrillo">
             </div>
             <h2>Angel David Avalos Carrillo</h2>
             <p class="title">BACHELOR OF SYSTEMS ENGINEERING AT TECNM</p>
@@ -40,6 +61,7 @@
                 <a href="https://github.com/DavidAvalos14"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/angel-david-avalos-carrillo-831a96301/"><i class="fab fa-linkedin"></i></a>
                 <a href="https://leetcode.com/u/davidavalos/"><i class="fas fa-code"></i></a>
+                <a href="https://instagram.com/aangel_aavalos" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
             
             <div class="cv-download">
@@ -51,7 +73,7 @@
     </div>
     
     <!-- Cuadro derecho: Sobre mí -->
-    <div class="div2 card">
+    <div id="sobre-mi" class="div2 card">
         <h2><i class="fas fa-user-circle"></i> Sobre Mí</h2>
         <p>I am a 8º semester student with the ability to learn quickly and with the desire to participate in the
             different opportunities on offer. I am interested in contributing with what I know to the company and
@@ -67,7 +89,7 @@
     </div>
     
     <!-- Proyectos -->
-    <div class="div3 card">
+    <div id="proyectos" class="div3 card">
         <h2><i class="fas fa-code"></i> Proyectos Destacados</h2>
         <div class="projects-grid">
             <div class="project-item">
@@ -89,7 +111,7 @@
     </div>
     
     <!-- Educación -->
-    <div class="div4 card">
+    <div id="educacion" class="div4 card">
         <h2><i class="fas fa-graduation-cap"></i> Educación</h2>
         <div class="education-section">
             <div class="education-item">
@@ -105,7 +127,7 @@
     </div>
     
     <!-- Habilidades -->
-    <div class="div7 card">
+    <div id="habilidades" class="div7 card">
         <h2><i class="fas fa-code"></i> Habilidades</h2>
         <div class="skills-section">
             <div class="skill-category">
@@ -137,23 +159,9 @@
     </div>
     
     <!-- Extras -->
-    <div class="div8 card">
+    <div id="extras" class="div8 card">
         <h2><i class="fas fa-star"></i> Extras</h2>
         <div class="extras-section">
-            <div class="extra-category">
-                <h3><i class="fas fa-certificate"></i> Certificaciones</h3>
-                <div class="extra-items">
-                    <div class="extra-item">
-                        <h4>Certificación 1</h4>
-                        <p>Institución - Año</p>
-                    </div>
-                    <div class="extra-item">
-                        <h4>Certificación 2</h4>
-                        <p>Institución - Año</p>
-                    </div>
-                </div>
-            </div>
-            
             <div class="extra-category">
                 <h3><i class="fas fa-language"></i> Idiomas</h3>
                 <div class="extra-items">
@@ -174,10 +182,25 @@
                     <p>Actualmente estoy enfocado en mejorar mis habilidades en desarrollo web y participando en competencias de programación competitiva.</p>
                 </div>
             </div>
+            
+            <div class="extra-category full-width">
+                <h3><i class="fas fa-certificate"></i> Certificaciones y Reconocimientos</h3>
+                <div class="extra-items">
+                    <div class="extra-item">
+                        <h4>Certificación 1</h4>
+                        <p>Institución - Año</p>
+                    </div>
+                    <div class="extra-item">
+                        <h4>Certificación 2</h4>
+                        <p>Institución - Año</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-    
+
+<script src="assets/js/main.js"></script>    
 
 </body>
 </html>
