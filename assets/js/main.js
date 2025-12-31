@@ -59,4 +59,44 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initial highlight
     highlightNavigation();
+
+    // Lightbox functionality for certification images
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.querySelector('.lightbox-close');
+    const certificationImages = document.querySelectorAll('.certification-image img');
+
+    // Open lightbox on image click
+    certificationImages.forEach(img => {
+        img.parentElement.addEventListener('click', function() {
+            lightbox.classList.add('active');
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    // Close lightbox on close button click
+    if (lightboxClose) {
+        lightboxClose.addEventListener('click', function() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+    }
+
+    // Close lightbox on background click
+    lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox) {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+
+    // Close lightbox on ESC key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
 });
