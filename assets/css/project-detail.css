@@ -1,0 +1,213 @@
+/* Project Detail Page Styles */
+.project-detail {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px 40px;
+}
+
+.project-header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 40px;
+    background: rgba(139, 92, 246, 0.05);
+    border-radius: 20px;
+    border: 1px solid rgba(181, 101, 200, 0.2);
+}
+
+.project-header h1 {
+    font-size: 3rem;
+    background: linear-gradient(135deg, #b565c8, #a855b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+.project-subtitle {
+    font-size: 1.3rem;
+    color: #d4a5e0;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project-meta span,
+.project-meta a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #c084d4;
+    font-size: 1rem;
+    padding: 8px 16px;
+    background: rgba(181, 101, 200, 0.1);
+    border-radius: 20px;
+    border: 1px solid rgba(181, 101, 200, 0.2);
+    transition: all 0.3s ease;
+}
+
+.project-meta a {
+    text-decoration: none;
+}
+
+.project-meta a:hover {
+    background: rgba(181, 101, 200, 0.2);
+    border-color: rgba(181, 101, 200, 0.4);
+    transform: translateY(-2px);
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #d4a5e0;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    background: rgba(181, 101, 200, 0.1);
+    border-radius: 25px;
+    border: 1px solid rgba(181, 101, 200, 0.2);
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    background: rgba(181, 101, 200, 0.2);
+    border-color: rgba(181, 101, 200, 0.4);
+    transform: translateX(-5px);
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.project-section {
+    background: rgba(139, 92, 246, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(181, 101, 200, 0.2);
+}
+
+.project-section h2 {
+    color: #d4a5e0;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(181, 101, 200, 0.3);
+}
+
+.project-section p {
+    color: #e2e8f0;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.project-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-section ul li {
+    color: #e2e8f0;
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.project-section ul li::before {
+    content: "▹";
+    color: #b565c8;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(181, 101, 200, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.project-gallery img:hover {
+    transform: scale(1.05);
+    border-color: rgba(181, 101, 200, 0.6);
+    box-shadow: 0 10px 30px rgba(181, 101, 200, 0.3);
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.tech-tag {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, rgba(181, 101, 200, 0.2), rgba(168, 85, 184, 0.2));
+    color: #d4a5e0;
+    border-radius: 25px;
+    border: 1px solid rgba(181, 101, 200, 0.3);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+    background: linear-gradient(135deg, rgba(181, 101, 200, 0.3), rgba(168, 85, 184, 0.3));
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(181, 101, 200, 0.2);
+}
+
+/* Navbar adjustments for project pages */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-header h1 {
+        font-size: 2rem;
+    }
+
+    .project-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .project-meta {
+        gap: 15px;
+    }
+
+    .project-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .project-section {
+        padding: 20px;
+    }
+
+    .project-section h2 {
+        font-size: 1.5rem;
+    }
+}
