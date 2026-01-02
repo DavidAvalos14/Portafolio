@@ -11,17 +11,15 @@ portfolio/
 │
 ├── assets/                 # Recursos del proyecto
 │   ├── css/
-│   │   └── style.css      # Estilos principales con tonalidades moradas
+│   │   ├── style.css      # Estilos del proyecto
 │   │
 │   ├── js/                # Scripts JavaScript
 │   │   └── main.js
 │   │
 │   ├── img/               # Imágenes y recursos visuales
-│   │   ├── profile.jpg
-│   │   ├── projects/      # Capturas de proyectos
-│   │   │   ├── tienda-php.png
-│   │   │   └── servidor-linux.png
-│   │   └── icons/         # Iconos personalizados
+│   │
+│   ├── projects/          # Páginas individuales de proyectos
+│   │   ├── Proyectos.html
 │   │
 │   └── docs/              # Documentos
 │       └── CV-David-Avalos.pdf
