@@ -995,20 +995,27 @@ body::before {
     .extra-category.full-width .extra-items {
         grid-template-columns: 1fr;
     }
-    
-    /* Deshabilitar efectos hover problemáticos en móvil */
-    .skill-tag:hover {
-        transform: none;
-        background: linear-gradient(135deg, #b565c8, #a855b8);
-        box-shadow: 0 2px 8px rgba(181, 101, 200, 0.2);
-    }
-    
-    .card:hover {
-        transform: none;
-    }
-    
-    .project-item:hover {
-        transform: none;
+}
+
+/* Deshabilitar TODOS los efectos hover en móviles y tablets */
+@media (hover: none) and (pointer: coarse) {
+    .card:hover,
+    .skill-tag:hover,
+    .project-item:hover,
+    .project-item:hover::before,
+    .project-item:hover .project-image img,
+    .education-item:hover,
+    .avatar:hover,
+    .info-item:hover,
+    .social-links a:hover,
+    .btn-download:hover,
+    .btn:hover,
+    .extra-category:hover,
+    .extra-item:hover,
+    .certification-item:hover,
+    .navbar-link:hover {
+        transform: none !important;
+        box-shadow: inherit !important;
     }
 }
         
