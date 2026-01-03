@@ -429,6 +429,10 @@ body::before {
     cursor: pointer;
     border: 1px solid rgba(181, 101, 200, 0.3);
     box-shadow: 0 2px 8px rgba(181, 101, 200, 0.2);
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .skill-tag:hover {
@@ -999,6 +1003,13 @@ body::before {
 
 /* Deshabilitar TODOS los efectos hover en móviles y tablets */
 @media (hover: none) and (pointer: coarse) {
+    * {
+        -webkit-tap-highlight-color: transparent !important;
+        -webkit-touch-callout: none !important;
+        -webkit-user-select: none !important;
+        user-select: none !important;
+    }
+    
     .card:hover,
     .skill-tag:hover,
     .project-item:hover,
@@ -1016,6 +1027,10 @@ body::before {
     .navbar-link:hover {
         transform: none !important;
         box-shadow: inherit !important;
+    }
+    
+    .navbar-link::after {
+        display: none !important;
     }
 }
         
