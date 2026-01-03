@@ -995,5 +995,20 @@ body::before {
     .extra-category.full-width .extra-items {
         grid-template-columns: 1fr;
     }
+    
+    /* Deshabilitar efectos hover problemáticos en móvil */
+    .skill-tag:hover {
+        transform: none;
+        background: linear-gradient(135deg, #b565c8, #a855b8);
+        box-shadow: 0 2px 8px rgba(181, 101, 200, 0.2);
+    }
+    
+    .card:hover {
+        transform: none;
+    }
+    
+    .project-item:hover {
+        transform: none;
+    }
 }
         
