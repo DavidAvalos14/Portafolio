@@ -996,4 +996,26 @@ body::before {
         grid-template-columns: 1fr;
     }
 }
+
+/* Deshabilitar TODOS los efectos hover en móviles y tablets */
+@media (hover: none) and (pointer: coarse) {
+    .card:hover,
+    .skill-tag:hover,
+    .project-item:hover,
+    .project-item:hover::before,
+    .project-item:hover .project-image img,
+    .education-item:hover,
+    .avatar:hover,
+    .info-item:hover,
+    .social-links a:hover,
+    .btn-download:hover,
+    .btn:hover,
+    .extra-category:hover,
+    .extra-item:hover,
+    .certification-item:hover,
+    .navbar-link:hover {
+        transform: none !important;
+        box-shadow: inherit !important;
+    }
+}
         
