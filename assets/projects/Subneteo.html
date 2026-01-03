@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Subneteo - Angel David Avalos</title>
+    <link rel="icon" type="image/png" href="../img/baseball-icon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Back Button -->
+    <a href="../../index.html#proyectos" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+    </a>
+
+    <div class="project-detail">
+        <div class="project-header">
+            <h1>Calculadora de Subneteo</h1>
+            <p class="project-subtitle">Network Subnet Calculator - C++ in Qt Creator</p>
+            <div class="project-meta">
+                <span><i class="fas fa-calendar"></i> 2024</span>
+                <span><i class="fas fa-code"></i> C++, Qt Creator</span>
+                <a href="https://github.com/DavidAvalos14/CalculadoraSubredes" target="_blank"><i class="fab fa-github"></i> Repository</a>
+            </div>
+        </div>
+
+        <div class="project-content">
+            <section class="project-section">
+                <h2>Overview</h2>
+                <p>
+                    This subnet calculator is a desktop application developed in C++ using the Qt Creator framework. 
+                    The project was created as part of the Computer Networks course to help students and network 
+                    professionals quickly calculate subnet parameters without manual calculations. The application 
+                    provides an intuitive graphical interface that simplifies the complex process of IP subnetting, 
+                    making it accessible for both beginners and experienced network administrators.
+                </p>
+                <p>
+                    The calculator takes an IP address and CIDR notation as input and automatically computes all 
+                    relevant network information including network address, broadcast address, usable host range, 
+                    subnet mask, and number of available hosts. This tool significantly reduces the time needed 
+                    for network planning and configuration tasks.
+                </p>
+            </section>
+
+            <section class="project-section">
+                <h2>Features</h2>
+                <ul>
+                    <li><strong>Automatic Subnet Calculation:</strong> Instantly calculates all subnet parameters from IP address and CIDR notation</li>
+                    <li><strong>Network Address Display:</strong> Shows the network address for the given subnet</li>
+                    <li><strong>Broadcast Address:</strong> Automatically determines the broadcast address of the subnet</li>
+                    <li><strong>Usable Host Range:</strong> Calculates and displays the first and last usable IP addresses</li>
+                    <li><strong>Subnet Mask Conversion:</strong> Converts CIDR notation to decimal subnet mask format</li>
+                    <li><strong>Host Count:</strong> Displays the total number of available hosts in the subnet</li>
+                    <li><strong>Binary Representation:</strong> Shows IP addresses in both decimal and binary formats</li>
+                    <li><strong>Input Validation:</strong> Validates IP address format and CIDR range to prevent errors</li>
+                    <li><strong>Clean GUI:</strong> Modern and intuitive interface built with Qt Designer</li>
+                    <li><strong>Quick Clear Function:</strong> Reset all fields with a single button click</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Gallery</h2>
+                <div class="project-gallery">
+                    <img src="../img/CalculadoraSubneteo.png" alt="Main Interface">
+                    <img src="../img/CalculadoraSubneteo.png" alt="Calculation Example">
+                    <img src="../img/CalculadoraSubneteo.png" alt="Binary View">
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Technologies Used</h2>
+                <div class="tech-stack">
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">Qt Creator</span>
+                    <span class="tech-tag">Qt Framework</span>
+                    <span class="tech-tag">Qt Designer</span>
+                    <span class="tech-tag">IPv4</span>
+                    <span class="tech-tag">CIDR</span>
+                    <span class="tech-tag">Networking</span>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Technical Challenges</h2>
+                <ul>
+                    <li><strong>Bit Manipulation:</strong> Implementing efficient bitwise operations for IP address calculations</li>
+                    <li><strong>CIDR Notation:</strong> Converting between CIDR notation and traditional subnet mask formats</li>
+                    <li><strong>Input Validation:</strong> Creating robust validation to handle invalid IP addresses and CIDR values</li>
+                    <li><strong>GUI Design:</strong> Designing an intuitive interface that makes complex networking concepts accessible</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

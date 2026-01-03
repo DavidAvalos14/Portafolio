@@ -1,8 +1,42 @@
 /* Project Detail Page Styles */
+
+/* Back Button - Absolute position top right */
+.back-button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #d4a5e0;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 12px 24px;
+    background: rgba(181, 101, 200, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    border: 2px solid rgba(181, 101, 200, 0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+    background: rgba(181, 101, 200, 0.25);
+    border-color: rgba(181, 101, 200, 0.5);
+    transform: translateX(-5px);
+    box-shadow: 0 6px 20px rgba(181, 101, 200, 0.3);
+}
+
+.back-button i {
+    font-size: 1.1rem;
+}
+
 .project-detail {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 100px 20px 40px;
+    padding: 80px 20px 40px;
 }
 
 .project-header {
@@ -106,6 +140,7 @@
     color: #e2e8f0;
     line-height: 1.8;
     font-size: 1.1rem;
+    text-align: justify;
 }
 
 .project-section ul {
