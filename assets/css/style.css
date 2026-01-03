@@ -1010,6 +1010,12 @@ body::before {
         user-select: none !important;
     }
     
+    .skill-tag {
+        transition: none !important;
+        transform: none !important;
+        cursor: default !important;
+    }
+    
     .card:hover,
     .skill-tag:hover,
     .project-item:hover,
