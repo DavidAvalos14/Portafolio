@@ -425,7 +425,6 @@ body::before {
     border-radius: 25px;
     font-size: 0.9em;
     font-weight: 500;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     border: 1px solid rgba(181, 101, 200, 0.3);
     box-shadow: 0 2px 8px rgba(181, 101, 200, 0.2);
@@ -435,11 +434,17 @@ body::before {
     user-select: none;
 }
 
-.skill-tag:hover {
-    background: linear-gradient(135deg, #c084d4, #b565c8);
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 6px 16px rgba(181, 101, 200, 0.5);
-    border-color: rgba(181, 101, 200, 0.6);
+@media (hover: hover) and (pointer: fine) {
+    .skill-tag {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .skill-tag:hover {
+        background: linear-gradient(135deg, #c084d4, #b565c8);
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 6px 16px rgba(181, 101, 200, 0.5);
+        border-color: rgba(181, 101, 200, 0.6);
+    }
 }
 
 /* Cuadro 3: Proyectos */
@@ -1010,14 +1015,22 @@ body::before {
         user-select: none !important;
     }
     
-    .skill-tag {
+    .skill-tag,
+    .skills,
+    .skill-category,
+    #habilidades {
         transition: none !important;
         transform: none !important;
+        will-change: auto !important;
         cursor: default !important;
+        -webkit-backface-visibility: hidden !important;
+        backface-visibility: hidden !important;
     }
     
     .card:hover,
     .skill-tag:hover,
+    .skill-tag:active,
+    .skill-tag:focus,
     .project-item:hover,
     .project-item:hover::before,
     .project-item:hover .project-image img,
@@ -1033,6 +1046,7 @@ body::before {
     .navbar-link:hover {
         transform: none !important;
         box-shadow: inherit !important;
+        background: inherit !important;
     }
     
     .navbar-link::after {
