@@ -983,5 +983,17 @@ body::before {
     .projects-grid {
         grid-template-columns: 1fr;
     }
+    
+    .extras-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .extra-category.full-width {
+        grid-column: 1;
+    }
+    
+    .extra-category.full-width .extra-items {
+        grid-template-columns: 1fr;
+    }
 }
         
