@@ -20,4 +20,11 @@ jobs:
           port: 22
           script: |
             cd ${{ secrets.VPS_APP_DIR }}
-            git pull origin main
+            git fetch origin main
+            git reset --hard origin/main
+            DEPLOY_SHA=$(git rev-parse --short HEAD)
+            echo "Deploying commit: ${DEPLOY_SHA}"
+
+            # Cache-busting for static assets in HTML files.
+            find . -type f -name "*.html" -exec sed -i -E \
+              "s#(assets/css/style\.css)(\?v=[^\"']*)?#\\1?v=${DEPLOY_SHA}#g; s#(assets/js/main\.js)(\?v=[^\"']*)?#\\1?v=${DEPLOY_SHA}#g; s#(\.\./js/main\.js)(\?v=[^\"']*)?#\\1?v=${DEPLOY_SHA}#g" {} +
