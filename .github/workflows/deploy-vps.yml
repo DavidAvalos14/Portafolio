@@ -27,4 +27,4 @@ jobs:
 
             # Cache-busting for static assets in HTML files.
             find . -type f -name "*.html" -exec sed -i -E \
-              "s#(assets/css/style\.css)(\?v=[^\"']*)?#\\1?v=${DEPLOY_SHA}#g; s#(assets/js/main\.js)(\?v=[^\"']*)?#\\1?v=${DEPLOY_SHA}#g; s#(\.\./js/main\.js)(\?v=[^\"']*)?#\\1?v=${DEPLOY_SHA}#g" {} +
+              "s#(assets/css/style\.css)(\?v=[^\"']*)?#\\1?v=${DEPLOY_SHA}#g; s#(assets/js/main\.js)(\?v=[^\"']*)?#\\1?v=${DEPLOY_SHA}#g; s#(\.\./js/main\.js)(\?v=[^\"']*)?#\\1?v=${DEPLOY_SHA}#g; s#(assets/docs/DavidAvalos_CV\.pdf)(\?v=[^\"']*)?#\\1?v=${DEPLOY_SHA}#g" {} +
